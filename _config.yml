@@ -1,0 +1,28 @@
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble: 
+  email: 
+  facebook: aqua.deep.music
+  flickr: 
+  github: # aqua-deep-music
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: 
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 7666
+
+sass:
+  sass_dir: assets/css
+  style: :expanded
+  
