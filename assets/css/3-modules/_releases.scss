@@ -7,7 +7,7 @@
 
 .releases {
 	// height: 100%;
-	margin: 100px auto;
+	margin: 120px auto;
 	width: 75%;
 	// position: relative;
 	// display: inline-block;
@@ -24,7 +24,7 @@
 		width: 50%;
 		a {
 			display: block;
-			margin: 0 5%;
+			margin: 0 7.5%;
 			border: 2px solid #000;
 			@include transition(all 0.05s $ease-out-quart);
 			.cover {
@@ -34,17 +34,20 @@
 					height: auto;
 					display: block;
 					@include transform(scale(0.825) translateZ(0));
-					@include transition(all 2.85s $ease-out-quart);
+					@include transition(all 2.95s $ease-out-quart);
 				}
 			}
 			h4 {
+				position: relative;
+				top: 0;
 				border-top: 2px solid #333;
 				margin: 0;
 				overflow: hidden;
 				text-align: center;
 				padding: 20px 10px 20px;
+				background: #000;
 				color: $accent-color;
-				text-shadow: 0 0 200px $accent-color;
+				text-shadow: 0 0 0 $accent-color;
 				@include transition(all 0.95s $ease-out-quart);
 					span {
 						display:block;
@@ -54,11 +57,12 @@
 				border-color: #333;
 				.cover {
 					img {
-						@include transform(scale(1.05) translateZ(0));
+						@include transform(scale(1.1) translateZ(0));
 					}
 				}
 				h4 {
-					text-shadow: 0 11px 9px $accent-color;
+					top: -20px;
+					text-shadow: 0 22px 12px $accent-color;
 				}
 			}
 		}
