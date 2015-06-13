@@ -1,7 +1,12 @@
 article.release {
-	border-bottom: 2px solid $divider-color;
-	padding: 160px 0 80px;
-	background: $bg-color-secondary;
+	h1 {
+		text-align: center;
+		margin-bottom: 80px;
+		span {
+			display: block;
+			text-align: center;
+		}
+	}
 	img {
 		border: 2px solid #333;
 		width: 100%;
