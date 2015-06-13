@@ -1,11 +1,9 @@
 .artists {
 	margin: 120px auto;
 	width: 75%;
-
-	h3 {
+	h2 {
 		margin: 0 0 80px;
 		text-align: center;
-
 	}
 	article {
 		float: left;
@@ -21,7 +19,7 @@
 					width: 100%;
 					height: auto;
 					display: block;
-					@include transform(scale(0.825) translateZ(0));
+					@include transform(scale(0.75) translateZ(0));
 					@include transition(all 2.95s $ease-out-quart);
 				}
 			}
