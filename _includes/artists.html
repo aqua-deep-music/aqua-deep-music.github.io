@@ -1,21 +1,15 @@
 <section class="artists">
 	<h3>Artists</h3>
 	<div class="isotope-container">
-		<article class="isotope-item">
-			<a href="/artist/irukanji">
-				<div class="image-contour">
-					<img src="/assets/img/artists/irukanji-thumbnail.jpg" alt='irukanji'>
-				</div>
-				<h4>Irukanji</h4>
-			</a>
-		</article>
-		<article class="isotope-item">
-			<a href="/artist/neirula">
-				<div class="image-contour">
-					<img src="/assets/img/artists/neirula-thumbnail.jpg" alt='neirula'>
-				</div>
-				<h4>NeiRula</h4>
-			</a>
-		</article>
+		{% for artists in site.categories.artists %}
+			<article class="isotope-item">
+				<a href="{{site.baseurl}}{{artists.url}}">
+					<div class="image-contour">
+						<img src="{{site.baseurl}}/assets/img/artists/{{artists.title}}-thumbnail.jpg" alt="{{artists.title}}">
+					</div>
+					<h4>{{artists.title}}</h4>
+				</a>
+			</article>
+		{% endfor %}
 	</div>
 </section>
