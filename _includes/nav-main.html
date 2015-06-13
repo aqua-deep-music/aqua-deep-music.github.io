@@ -1,8 +1,12 @@
 <nav class="nav-main {{include.navclass}}">
-	<a href="{{site.baseurl}}/" class="{% if page.url == '/'%}active{% endif %}">Home</a>
+	<div class="container">
 
-<!-- 	<a href="{{site.baseurl}}/news/" class="{% if page.url contains 'new' %}active{% endif %}">News</a> -->
+		<a href="{{site.baseurl}}/" class="{% if page.url == '/'%}active{% endif %}">Home</a>
 
-	<a href="{{site.baseurl}}/releases/" class="{% if page.url contains 'release' %}active{% endif %}">Releases</a>
-	<a href="{{site.baseurl}}/artists/" class="{% if page.url contains 'artist' %}active{% endif %}">Artists</a>
+	<!-- 	<a href="{{site.baseurl}}/news/" class="{% if page.url contains 'new' %}active{% endif %}">News</a> -->
+
+		<a href="{{site.baseurl}}/releases/" class="{% if page.url contains 'release' %}active{% endif %}">Releases</a>
+		<a href="{{site.baseurl}}/artists/" class="{% if page.url contains 'artist' %}active{% endif %}">Artists</a>
+
+</div>
 </nav>

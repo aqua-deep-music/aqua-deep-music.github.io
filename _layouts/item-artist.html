@@ -3,15 +3,25 @@ layout: default
 ---
 
 <article class="artist">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
 
-	<img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-large.jpg" alt='{{page.title}}' data-action="zoom">
-	<h1>{{page.title}}</h1>
-	<ul class="list">
-		<li>Location: {{page.location}}</li>
-	</ul>
+				<img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-large.jpg" alt='{{page.title}}' data-action="zoom">
 
-	{{content}}
+			</div>
+			<div class="col-sm-6">
 
+				<h1>{{page.title}}</h1>
+				<ul class="list">
+					<li>Location: {{page.location}}</li>
+				</ul>
+
+				{{content}}
+
+			</div>
+		</div>
+	</div>
 </article>
 
 {% include list-artists.html %}

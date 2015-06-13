@@ -1,29 +1,60 @@
 nav.nav-main {
 	position: relative;
-	z-index: 100;
-	// @include box-sizing(border-box);
+	z-index: 9999;
 	&.nav-top {
 		position: fixed;
 		top: 0;
 		width: 100%;
 		text-align: center;
-		background-color: $bg-color-secondary;
+		background-color: $bg-color;
 		border-bottom: 2px solid $divider-color;
+		padding: 15px 0;
+		@include transition(all 0.5s);
 
 		a {
+			// position: relative;
+			// top: 0;
 			text-transform: uppercase;
 			font-weight: 700;
-			letter-spacing: 3px;
-			padding: 29px 20px;
-			font-size: 16px;
+			padding: 14px 20px;
+			font-size: 20px;
+			letter-spacing: 4px;
 			line-height: 20px;
 			display: inline-block;
 			font-family: 'Julius Sans One', sans-serif;
+			@include transition(all 0.5s);
+			color: $link-color;
+			text-shadow: 0 0 0 $link-color;
+			&:hover {
+				color: lighten($link-color, 20%);
+				text-shadow: 0 6px 4px lighten($link-color, 20%), 0 -6px 4px lighten($link-color, 20%);
+			}
+			&.active,
+			&.active:hover {
+				color: #54bebe;
+				text-shadow: 0 0 4px #54bebe;
+			}
+		}
+	}
+	// &.nav-top-large {
+	// 	a {
+	// 	}
+	// }
+	&.nav-top-small {
+		border-bottom-width: 0;
+		padding: 0;
+		a {
+			font-size: 16px;
+			letter-spacing: 2px;
 		}
 	}
 	a {
-		&.active {
-			color: rgb(84, 190, 190);
+		&.active,
+		&.active:hover {
+			color: #54bebe;
 		}
 	}
+}
+.zoom-overlay-open nav.nav-main {
+	top: -80px;
 }

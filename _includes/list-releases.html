@@ -1,15 +1,19 @@
 <section class="releases">
-	<h2>Releases</h2>
-	<div class="isotope-container">
-		{% for releases in site.categories.releases %}
-			<article class="isotope-item">
-				<a href="{{site.baseurl}}{{releases.url}}">
-					<div class="image-contour">
-						<img src="{{site.baseurl}}/assets/img/releases/{{releases.cat-no}}-thumbnail.jpg" alt='{{releases.artist}} "{{releases.release-title}}"'>
-					</div>
-					<h4>{{releases.artist}} <span>"{{releases.release-title}}"</span></h4>
-				</a>
-			</article>
-		{% endfor %}
+	<div class="container">
+
+		<h2>Releases</h2>
+		<div class="isotope-container">
+			{% for releases in site.categories.releases %}
+				<article class="isotope-item">
+					<a href="{{site.baseurl}}{{releases.url}}">
+						<div class="image-contour">
+							<img src="{{site.baseurl}}/assets/img/releases/{{releases.cat-no}}-thumbnail.jpg" alt='{{releases.artist}} "{{releases.release-title}}"'>
+						</div>
+						<h4>{{releases.artist}} <span>"{{releases.release-title}}"</span></h4>
+					</a>
+				</article>
+			{% endfor %}
+		</div>
+
 	</div>
 </section>
