@@ -22,25 +22,28 @@
 
 	{% include nav-main.html navclass='nav-top' %}
 
-	{{ content }}
+	<main>
+		{{ content }}
 
-	<footer>
-		<section>
-			{% include nav-main.html navclass='nav-bottom ' %}
-			<nav>
-				<a href="https://aquadeep.bandcamp.com" target="_blank">bandcamp</a>
-				<a href="https://www.facebook.com/aqu.deep.music" target="_blank">facebook</a>
-				<a href="https://soundcloud.com/aqua-deep-music" target="_blank">soundcloud</a>
-				<a href="http://www.discogs.com/label/173217-Aqua-Deep-Music" target="_blank">discogs</a>
-			</nav>
-			<nav>
-				<a href="http://sentimony.com">Sentimony Records</a>
-				<a href="http://aquadeepmusic.com">Aqua Deep Music</a>
-				<a href="http://sentimony.com">Lookinglook Records</a>
-			</nav>
-			<p class="copyright">Aqua Deep Music 2009 - 2015 © All Rights Reserved</p>
-		</section>
-	</footer>
+		<footer>
+			<section>
+				{% include nav-main.html navclass='nav-bottom ' %}
+				<nav>
+					<a href="https://aquadeep.bandcamp.com" target="_blank">bandcamp</a>
+					<a href="https://www.facebook.com/aqu.deep.music" target="_blank">facebook</a>
+					<a href="https://soundcloud.com/aqua-deep-music" target="_blank">soundcloud</a>
+					<a href="http://www.discogs.com/label/173217-Aqua-Deep-Music" target="_blank">discogs</a>
+				</nav>
+				<nav>
+					<a href="http://sentimony.com">Sentimony Records</a>
+					<a href="http://aquadeepmusic.com">Aqua Deep Music</a>
+					<a href="http://sentimony.com">Lookinglook Records</a>
+				</nav>
+				<p class="copyright">Aqua Deep Music 2009 - 2015 © All Rights Reserved</p>
+			</section>
+		</footer>
+
+	</main>
 
 	<script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
 	<script src="{{site.baseurl}}/assets/js/vendor/bootstrap.min.js"></script>

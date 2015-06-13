@@ -7,8 +7,8 @@ layout: default
 	<img src="{{site.baseurl}}/assets/img/releases/{{page.cat-no}}-large.jpg" alt='{{page.title}}' data-action="zoom">
 	<h1>{{page.title}}</h1>
 	<ul class="list">
-		<li>Artist: <span>{{page.artist}}<span></li>
-		<li>Title: <span>"{{page.release-title}}"<span></li>
+		<!-- <li>Artist: <span>{{page.artist}}<span></li>
+		<li>Title: <span>"{{page.release-title}}"<span></li> -->
 		<li class="cat-no">Cat.No: <span>{{page.cat-no}}<span></li>
 		<li>Release Date: <span>{{ page.date | date: "%d %b %Y" }}<span></li>
 		<li>Total Time: <span>{{ page.total-time}}<span></li>
@@ -17,3 +17,6 @@ layout: default
 	{{content}}
 
 </article>
+
+{% include list-releases.html %}
+{% include list-artists.html %}
