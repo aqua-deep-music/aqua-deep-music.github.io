@@ -1,0 +1,10 @@
+<section class="news">
+	<h3>News</h3>
+	<div class="isotope-container">
+		{% for news in site.categories.news%}
+			<article class="isotope-item">
+				<a href="{{site.baseurl}}{{news.url}}">{{news.title}}</h4></a>
+			</article>
+		{% endfor %}
+	</div>
+</section>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if page.title %}{{page.title}} · {% endif %}Aqua Deep Music{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
+	<meta name="description" content="{{page.meta}}">
+	<meta name="keywords" content="{{page.keywords}}">
+	<meta name="author" content="Ihor Orlovskyi">
+
+	<link rel="shortcut icon" href="{{site.baseurl}}/assets/img/favicons/favicon-32x32.png">  
+	<!-- <link rel="stylesheet" href="http://fat.github.io/zoom.js/css/zoom.css"> -->
+	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+
+	<!-- favicomatic -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{site.baseurl}}/assets/img/favicomatic/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{site.baseurl}}/assets/img/favicomatic/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicomatic/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicomatic/favicon-16x16.png" sizes="16x16" />
+	<meta name="application-name" content="Geometric Theme by Le Coq Studio" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="{{site.baseurl}}/assets/img/favicomatic/mstile-144x144.png" />
+
+</head>
+<body>
+
+	{% include nav-main.html navclass='nav-top' %}
+
+	{{ content }}
+
+	<footer>
+		<section>
+			{% include nav-main.html navclass='nav-bottom ' %}
+			<nav>
+				<a href="https://aquadeep.bandcamp.com" target="_blank">bandcamp</a>
+				<a href="https://www.facebook.com/aqu.deep.music" target="_blank">facebook</a>
+				<a href="https://soundcloud.com/aqua-deep-music" target="_blank">soundcloud</a>
+				<a href="http://www.discogs.com/label/173217-Aqua-Deep-Music" target="_blank">discogs</a>
+			</nav>
+			<nav>
+				<a href="http://sentimony.com">Sentimony Records</a>
+				<a href="http://aquadeepmusic.com">Aqua Deep Music</a>
+				<a href="http://sentimony.com">Lookinglook Records</a>
+			</nav>
+			<p class="copyright">Aqua Deep Music 2009 - 2015 © All Rights Reserved</p>
+		</section>
+	</footer>
+
+	<script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
+	<!-- <script src="http://fat.github.io/zoom.js/js/zoom.js"></script> -->
+	<script src="{{site.baseurl}}/assets/js/main.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55073374-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->
+
+</body>
+</html>

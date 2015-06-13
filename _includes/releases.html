@@ -1,27 +1,15 @@
 <section class="releases">
-
 	<h3>Releases</h3>
-
 	<div class="isotope-container">
-
-		<article class="isotope-item">
-			<a href="/release/adcd02">
-				<div class="image-contour">
-					<img src="/assets/img/releases/adcd02-thumbnail.jpg" alt='Cifroteca & Roof Raiser "Wild Storm"'>
-				</div>
-				<h4>Cifroteca & Roof Raiser <span>"Wild Storm"</span></h4>
-			</a>
-		</article>
-
-		<article class="isotope-item">
-			<a href="/release/adcd01">
-				<div class="image-contour">
-					<img src="/assets/img/releases/adcd01-thumbnail.jpg" alt='Various Artists "Ocean Scenes: Higher Titans"'>
-				</div>
-				<h4>Various Artists <span>"Ocean Scenes: Higher Titans"</span></h4>
-			</a>
-		</article>
-
+		{% for releases in site.categories.releases%}
+			<article class="isotope-item">
+				<a href="{{site.baseurl}}{{releases.url}}">
+					<div class="image-contour">
+						<img src="{{site.baseurl}}/assets/img/releases/{{releases.cat-no}}-thumbnail.jpg" alt='{{releases.artist}} "{{releases.release-title}}"'>
+					</div>
+					<h4>{{releases.artist}} <span>"{{releases.release-title}}"</span></h4>
+				</a>
+			</article>
+		{% endfor %}
 	</div>
-
 </section>
