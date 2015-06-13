@@ -1,0 +1,13 @@
+article.artist {
+	margin: 120px auto;
+	width: 75%;
+	ul.list {
+		list-style: none;
+		margin: 0 0 20px;
+		padding: 0;
+		li{
+			&.cat-no span {text-transform:uppercase;}
+		}
+	}
+}
+

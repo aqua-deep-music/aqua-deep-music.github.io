@@ -4,9 +4,10 @@ layout: default
 
 <article class="artist">
 
-	<img src="{{site.baseurl}}/assets/img/artists/{{page.cat-no}}-thumbnail.jpg" alt='{{page.title}}'>
+	<img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-thumbnail.jpg" alt='{{page.title}}'>
 	<h1>{{page.title}}</h1>
 	<ul class="list">
+		<li>Location: {{page.location}}</li>
 	</ul>
 
 	{{content}}
