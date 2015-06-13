@@ -1,13 +1,14 @@
-.releases {
+.artists {
 	margin: 120px auto;
 	width: 75%;
 	h2 {
 		margin: 0 0 80px;
 		text-align: center;
+		letter-spacing: 5px;
 	}
 	article {
 		float: left;
-		width: 50%;
+		width: 25%;
 		a {
 			display: block;
 			margin: 0 7.5%;
@@ -19,7 +20,7 @@
 					width: 100%;
 					height: auto;
 					display: block;
-					@include transform(scale(0.825) translateZ(0));
+					@include transform(scale(0.75) translateZ(0));
 					@include transition(all 2.95s $ease-out-quart);
 				}
 			}
