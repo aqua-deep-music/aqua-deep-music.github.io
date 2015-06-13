@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Magmadivers
 url-id: magmadivers
 meta: Magmadivers

@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Overdream
 url-id: overdream
 meta: Overdream

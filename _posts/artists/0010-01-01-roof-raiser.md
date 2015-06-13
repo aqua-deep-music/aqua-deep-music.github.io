@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Roof Raiser
 url-id: roof-raiser
 meta: Roof Raiser

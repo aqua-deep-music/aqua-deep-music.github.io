@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Tookytooky
 url-id: tookytooky
 meta: Tookytooky

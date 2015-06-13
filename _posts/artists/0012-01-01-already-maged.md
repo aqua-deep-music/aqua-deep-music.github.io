@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Already Maged
 url-id: already-maged
 meta: Already Maged

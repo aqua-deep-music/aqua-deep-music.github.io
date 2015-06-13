@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Shivattva
 url-id: shivattva
 meta: Shivattva

@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Saikozaurus
 url-id: saikozaurus
 meta: Saikozaurus

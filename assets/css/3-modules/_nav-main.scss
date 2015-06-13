@@ -1,0 +1,29 @@
+nav.nav-main {
+	position: relative;
+	z-index: 100;
+	// @include box-sizing(border-box);
+	&.nav-top {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		text-align: center;
+		background-color: $bg-color-secondary;
+		border-bottom: 2px solid $divider-color;
+
+		a {
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 3px;
+			padding: 29px 20px;
+			font-size: 16px;
+			line-height: 20px;
+			display: inline-block;
+			font-family: 'Julius Sans One', sans-serif;
+		}
+	}
+	a {
+		&.active {
+			color: rgb(84, 190, 190);
+		}
+	}
+}

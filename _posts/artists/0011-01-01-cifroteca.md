@@ -1,5 +1,5 @@
 ---
-layout: artist-item
+layout: item-artist
 title: Cifroteca
 url-id: cifroteca
 meta: Cifroteca
