@@ -5,7 +5,6 @@ url-id: saikozaurus
 meta: Saikozaurus
 location: Odesa, Ukraine
 category: artists
-permalink: artist/:title/
 
 ---
 

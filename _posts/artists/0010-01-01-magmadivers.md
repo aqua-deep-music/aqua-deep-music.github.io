@@ -5,7 +5,6 @@ url-id: magmadivers
 meta: Magmadivers
 location: Kyiv, Ukraine
 category: artists
-permalink: artist/:title/
 
 ---
 

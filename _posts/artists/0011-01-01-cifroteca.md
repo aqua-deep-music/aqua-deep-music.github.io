@@ -5,7 +5,6 @@ url-id: cifroteca
 meta: Cifroteca
 location: Crimea, Ukraine
 category: artists
-permalink: artist/:title/
 
 ---
 
