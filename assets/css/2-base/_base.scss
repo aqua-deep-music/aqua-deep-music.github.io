@@ -64,8 +64,10 @@ a {
 	color: $link-color;
 	text-decoration: none;
 	outline: 0;
+	@include transition(all 0.2s);
+
 	&:hover, &:focus {
-		color: lighten($link-color, 20%);
+		color: $link-color-hover;
 	}
 }
 
