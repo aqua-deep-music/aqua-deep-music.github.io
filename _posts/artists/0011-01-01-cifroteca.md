@@ -3,6 +3,7 @@ layout: item-artist
 title: Cifroteca
 url-id: cifroteca
 meta: Cifroteca
+keywords: Cifroteca
 
 name: Yuriy Iofik
 location: Crimea, Ukraine

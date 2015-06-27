@@ -3,6 +3,7 @@ layout: item-artist
 title: Tookytooky
 url-id: tookytooky
 meta: Tookytooky
+keywords: Tookytooky
 
 name: Sergey Verbitsky
 location: Odesa, Ukraine

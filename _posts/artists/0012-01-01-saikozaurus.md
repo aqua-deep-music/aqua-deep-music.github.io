@@ -3,6 +3,7 @@ layout: item-artist
 title: Saikozaurus
 url-id: saikozaurus
 meta: Saikozaurus
+keywords: Saikozaurus
 
 name: Daniil Pastushenko
 location: Odesa, Ukraine
