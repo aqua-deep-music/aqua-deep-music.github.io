@@ -1,15 +1,34 @@
 article.artist {
+
 	img {
 		border: 2px solid #333;
 		width: 100%;
-		// margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
+
+	nav.social {
+		a {
+			padding: 6px 12px 6px 0;
+			display: inline-block;
+
+			[class^="icon-"] {
+				font-size: 34px;
+				position: relative;
+				top: 10px;
+				margin-right: 10px;
+			}
+		}
+	}
+
 	ul.list {
 		list-style: none;
 		margin: 0 0 20px;
 		padding: 0;
+
 		li{
-			&.cat-no span {text-transform:uppercase;}
+			&.cat-no span {text-transform: uppercase;}
 		}
+
 	}
+
 }
