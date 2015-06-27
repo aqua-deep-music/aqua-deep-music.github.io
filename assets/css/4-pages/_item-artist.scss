@@ -1,4 +1,7 @@
 article.artist {
+	$bg-color-gradient: lighten($bg-color, 4%);
+	background-image: repeating-radial-gradient(circle at 50% 50%, $bg-color-gradient 50%, transparent 55%);
+	background-size: 30px 30px;
 	img {
 		border: 2px solid #333;
 		width: 100%;
@@ -12,4 +15,3 @@ article.artist {
 		}
 	}
 }
-

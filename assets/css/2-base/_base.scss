@@ -59,6 +59,8 @@ hr {
 	height: 0;
 }
 
+
+
 // Links
 a {
 	color: $link-color;
@@ -66,9 +68,7 @@ a {
 	outline: 0;
 	@include transition(all 0.2s);
 
-	&:hover, &:focus {
-		color: $link-color-hover;
-	}
+	&:hover, &:focus {color: $link-color-hover;}
 }
 
 

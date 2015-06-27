@@ -13,11 +13,12 @@
 
 	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
-	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/32x32.png">
+	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/favicon-32.png">
 
 </head>
 <body>
 
+	{% include preloader.html %}
 	{% include nav-main.html navclass='nav-top' %}
 
 	<main class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
@@ -35,9 +36,9 @@
 				<nav class="labels">
 					<a href="http://sentimony.com">Sentimony Records</a>
 					<a class="active" href="http://aquadeepmusic.com">Aqua Deep Music</a>
-					<a href="http://sentimony.com">Lookinglook Records</a>
+					<a href="http://lookinglook.com">Lookinglook Records</a>
 				</nav>
-				<p>Design & Development by <a href="http://ihororlovskyi.github.io/" target="_blank">Ihor Orlovskyi</a></p>
+				<p>Web Development & Design by <a href="http://ihororlovskyi.github.io/" target="_blank">Ihor Orlovskyi</a></p>
 				<p class="copyright">Aqua Deep Music 2009 - 2015 © All Rights Reserved</p>
 			</section>
 		</footer>
@@ -50,6 +51,7 @@
 	<script src="{{site.baseurl}}/assets/js/vendor/isotope.pkgd.min.js"></script>
 	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
 	<script src="{{site.baseurl}}/assets/js/vendor/zoom.js"></script>
+	<script src="http://leaverou.github.io/conic-gradient/conic-gradient.js"></script>
 	<script src="{{site.baseurl}}/assets/js/main.js"></script>
 
 	<!-- Google Analytics -->
