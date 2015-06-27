@@ -9,6 +9,17 @@ layout: default
 
 				<img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-large.jpg" alt='{{page.title}}' data-action="zoom">
 
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=197035617008842";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="https://www.facebook.com/irukanji.music" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
+
 			</div>
 			<div class="col-sm-6">
 
@@ -18,7 +29,19 @@ layout: default
 					<li>Location: {{page.location}}</li>
 				</ul>
 
+				<br>
+
+				{% if page.soundcloud-id %}
+				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{{page.soundcloud-id}}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				{% endif %}
+
 				{{content}}
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+
 
 			</div>
 		</div>

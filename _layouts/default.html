@@ -16,18 +16,18 @@
 	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/favicon-32.png">
 
 </head>
-<body>
+<body class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
 
 	{% include preloader.html %}
 	{% include nav-main.html navclass='nav-top' %}
 
-	<main class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
+	<main>
 		{{ content }}
 
 		<footer>
 			<section>
 				{% include nav-main.html navclass='nav-bottom ' %}
-				<nav>
+				<nav class="social">
 					<a href="https://aquadeep.bandcamp.com" target="_blank">bandcamp</a>
 					<a href="https://www.facebook.com/aqua.deep.music" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://soundcloud.com/aqua-deep-music" target="_blank"><i class="fa fa-soundcloud"></i></a>
@@ -51,7 +51,6 @@
 	<script src="{{site.baseurl}}/assets/js/vendor/isotope.pkgd.min.js"></script>
 	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
 	<script src="{{site.baseurl}}/assets/js/vendor/zoom.js"></script>
-	<script src="http://leaverou.github.io/conic-gradient/conic-gradient.js"></script>
 	<script src="{{site.baseurl}}/assets/js/main.js"></script>
 
 	<!-- Google Analytics -->

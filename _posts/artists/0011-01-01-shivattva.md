@@ -6,6 +6,7 @@ meta: Shivattva
 
 name: Artem Arhangelskiy
 location: Odesa, Ukraine
+soundcloud-id: 4022374
 
 category: artists
 permalink: artists/shivattva/

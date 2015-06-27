@@ -6,6 +6,7 @@ meta: Saikozaurus
 
 name: Daniil Pastushenko
 location: Odesa, Ukraine
+soundcloud-id: 589570
 
 category: artists
 permalink: artists/saikozaurus/
