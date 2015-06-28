@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{% if page.title %}{{page.title}} · {% endif %}Aqua Deep Music{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }} · {% endif %}Aqua Deep Music{% if page.titleAfter %} · {{ page.titleAfter }}{% endif %}</title>
 	<meta name="description" content="{{page.meta}}">
 	<meta name="keywords" content="{% if page.keywords %}{{page.keywords}}, {% endif %}{{site.keywords}}">
 	<meta name="author" content="Ihor Orlovskyi">
 
-	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
-	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/favicon-32.png">
+	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
 
 </head>
 <body class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
@@ -45,15 +45,13 @@
 
 	</main>
 
-	<script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/vendor/bootstrap.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/vendor/isotope.pkgd.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/vendor/waypoints.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/vendor/zoom.js"></script>
-	<script src="{{site.baseurl}}/assets/js/main.js"></script>
-
-	<!-- Google Analytics -->
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/isotope.pkgd.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/waypoints.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/zoom.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,7 +62,5 @@
 		ga('send', 'pageview');
 
 	</script>
-	<!-- End Google Analytics -->
-
 </body>
 </html>
