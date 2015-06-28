@@ -10,7 +10,7 @@ location: Crimea, Ukraine
 soundcloud-id: 728376
 
 category: artists
-permalink: artists/cifroteca/
+permalink: artist/cifroteca/
 
 ---
 

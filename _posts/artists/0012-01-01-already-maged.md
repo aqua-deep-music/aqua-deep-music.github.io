@@ -10,7 +10,7 @@ location: Lviv, Ukraine
 soundcloud-id: 7853646
 
 category: artists
-permalink: artists/already-maged/
+permalink: artist/already-maged/
 
 ---
 

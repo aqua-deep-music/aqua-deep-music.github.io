@@ -10,7 +10,7 @@ location: Odesa, Ukraine
 soundcloud-id: 4022374
 
 category: artists
-permalink: artists/shivattva/
+permalink: artist/shivattva/
 
 ---
 

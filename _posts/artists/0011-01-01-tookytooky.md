@@ -10,7 +10,7 @@ location: Odesa, Ukraine
 soundcloud-id: 16396451
 
 category: artists
-permalink: artists/tookytooky/
+permalink: artist/tookytooky/
 
 ---
 
