@@ -2,7 +2,7 @@
 baseurl: 
 markdown: kramdown
 permalink: /:title/
-keywords: Aqua Deepp Music, psychedelic, psytrance
+keywords: 'Aqua Deepp Music, psychedelic, psytrance'
 
 port: 7666
 
