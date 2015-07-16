@@ -1,4 +1,16 @@
 /**
+* nprogress
+* https://github.com/rstacruz/nprogress/
+*/
+$(document).ready(function() {
+	NProgress.start();
+});
+$(window).load(function(){
+	NProgress.done();
+});
+
+
+/**
  * Created by Sallar Kaboli <sallar.kaboli@gmail.com>
  * @sallar
  * 

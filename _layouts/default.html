@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
 <head>
 
 	<meta charset="utf-8">
@@ -16,9 +16,8 @@
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
 
 </head>
-<body class="header-waypoint" data-animate-down="nav-top-small" data-animate-up="nav-top-large">
+<body>
 
-	{% include preloader.html %}
 	{% include nav-main.html navclass='nav-top' %}
 
 	<main>
@@ -45,11 +44,12 @@
 
 	</main>
 
-	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery-1.11.3.min.js"></script>
 	<script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
 	<script src="{{ site.baseurl }}/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
 	<script src="{{ site.baseurl }}/assets/js/vendor/isotope.pkgd.min.js"></script>
-	<script src="{{ site.baseurl }}/assets/js/vendor/waypoints.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/jquery.waypoints.min.js"></script>
+	<script src="{{ site.baseurl }}/assets/js/vendor/nprogress.js"></script>
 	<script src="{{ site.baseurl }}/assets/js/vendor/zoom.js"></script>
 	<script src="{{ site.baseurl }}/assets/js/main.js"></script>
 	<script>
@@ -57,10 +57,8 @@
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 		ga('create', 'UA-55073374-1', 'auto');
 		ga('send', 'pageview');
-
 	</script>
 </body>
 </html>
