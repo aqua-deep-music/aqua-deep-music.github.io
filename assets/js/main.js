@@ -1,16 +1,4 @@
 /**
-* nprogress
-* https://github.com/rstacruz/nprogress/
-*/
-$(document).ready(function() {
-	NProgress.start();
-});
-$(window).load(function(){
-	NProgress.done();
-});
-
-
-/**
  * Created by Sallar Kaboli <sallar.kaboli@gmail.com>
  * @sallar
  * 
@@ -29,11 +17,11 @@ $(window).load(function(){
  * Cache
  */
 var $content = $('header .content')
-	, $blur    = $('header .overlay')
-	, wHeight  = $(window).height();
+    , $blur    = $('header .overlay')
+    , wHeight  = $(window).height();
 
 $(window).on('resize', function(){
-	wHeight = $(window).height();
+    wHeight = $(window).height();
 });
 
 /**
@@ -41,12 +29,12 @@ $(window).on('resize', function(){
  */
 window.requestAnimFrame = (function()
 {
-	return  window.requestAnimationFrame       ||
-					window.webkitRequestAnimationFrame ||
-					window.mozRequestAnimationFrame    ||
-					function( callback ){
-						window.setTimeout(callback, 1000 / 60);
-					};
+    return  window.requestAnimationFrame       ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame    ||
+                    function( callback ){
+                        window.setTimeout(callback, 1000 / 60);
+                    };
 })();
 
 /**
@@ -54,59 +42,59 @@ window.requestAnimFrame = (function()
  */
 function Scroller()
 {
-	this.latestKnownScrollY = 0;
-	this.ticking            = false;
+    this.latestKnownScrollY = 0;
+    this.ticking            = false;
 }
 
 Scroller.prototype = {
-	/**
-	 * Initialize
-	 */
-	init: function() {
-		window.addEventListener('scroll', this.onScroll.bind(this), false);
-	},
+    /**
+     * Initialize
+     */
+    init: function() {
+        window.addEventListener('scroll', this.onScroll.bind(this), false);
+    },
 
-	/**
-	 * Capture Scroll
-	 */
-	onScroll: function() {
-		this.latestKnownScrollY = window.scrollY;
-		this.requestTick();
-	},
+    /**
+     * Capture Scroll
+     */
+    onScroll: function() {
+        this.latestKnownScrollY = window.scrollY;
+        this.requestTick();
+    },
 
-	/**
-	 * Request a Tick
-	 */
-	requestTick: function() {
-		if( !this.ticking ) {
-			window.requestAnimFrame(this.update.bind(this));
-		}
-		this.ticking = true;
-	},
+    /**
+     * Request a Tick
+     */
+    requestTick: function() {
+        if( !this.ticking ) {
+            window.requestAnimFrame(this.update.bind(this));
+        }
+        this.ticking = true;
+    },
 
-	/**
-	 * Update.
-	 */
-	update: function() {
-		var currentScrollY = this.latestKnownScrollY;
-		this.ticking       = false;
-		
-		/**
-		 * Do The Dirty Work Here
-		 */
-		var slowScroll = currentScrollY / 4
-			, blurScroll = currentScrollY * 2;
-		
-		$content.css({
-			'transform'         : 'translateY(-' + slowScroll + 'px)',
-			'-moz-transform'    : 'translateY(-' + slowScroll + 'px)',
-			'-webkit-transform' : 'translateY(-' + slowScroll + 'px)'
-		});
-		
-		$blur.css({
-			'opacity' : blurScroll / wHeight
-		});
-	}
+    /**
+     * Update.
+     */
+    update: function() {
+        var currentScrollY = this.latestKnownScrollY;
+        this.ticking       = false;
+        
+        /**
+         * Do The Dirty Work Here
+         */
+        var slowScroll = currentScrollY / 4
+            , blurScroll = currentScrollY * 2;
+        
+        $content.css({
+            'transform'         : 'translateY(-' + slowScroll + 'px)',
+            '-moz-transform'    : 'translateY(-' + slowScroll + 'px)',
+            '-webkit-transform' : 'translateY(-' + slowScroll + 'px)'
+        });
+        
+        $blur.css({
+            'opacity' : blurScroll / wHeight
+        });
+    }
 };
 
 /**
@@ -128,28 +116,28 @@ scroller.init();
 // Header menu FX
 var $head = $( '.nav-top' );
 $('.header-waypoint').each( function(i) {
-	var $el = $( this ),
-		animClassDown = $el.data( 'animateDown' ),
-		animClassUp = $el.data( 'animateUp' );
-	$el.waypoint( function( direction ) {
-		if( direction === 'down' && animClassDown ) {
-			$head.attr('class', 'nav-main nav-top ' + animClassDown);
-		}
-		else if( direction === 'up' && animClassUp ){
-			$head.attr('class', 'nav-main nav-top ' + animClassUp);
-		}
-	}, { offset: '-25%' } );
+    var $el = $( this ),
+        animClassDown = $el.data( 'animateDown' ),
+        animClassUp = $el.data( 'animateUp' );
+    $el.waypoint( function( direction ) {
+        if( direction === 'down' && animClassDown ) {
+            $head.attr('class', 'nav-main nav-top ' + animClassDown);
+        }
+        else if( direction === 'up' && animClassUp ){
+            $head.attr('class', 'nav-main nav-top ' + animClassUp);
+        }
+    }, { offset: '-25%' } );
 });
 
 
 // Isotope
 var $container = $('.isotope-container');
 $(document).ready(function() {
-	$container.imagesLoaded( function() {
-		$container.isotope({
-			itemSelector: '.isotope-item',
-		});
-	});
+    $container.imagesLoaded( function() {
+        $container.isotope({
+            itemSelector: '.isotope-item',
+        });
+    });
 });
 
 

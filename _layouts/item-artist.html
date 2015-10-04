@@ -3,61 +3,61 @@ layout: default
 ---
 
 <article class="post-item artist">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
 
-				<img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-large.jpg" alt='{{page.title}}' data-action="zoom">
+                <img src="{{site.baseurl}}/assets/img/artists/{{page.url-id}}-large.jpg" alt='{{page.title}}' data-action="zoom">
 
-				<div>{{page.title}} links:</div>
-				<nav class="social">
-					{% if page.website %}<a href="http://{{page.website}}" target="_blank"><span class="icon-eagle"></span> {{page.title}}'s Website</a><br>{% endif %}
-					{% if page.bandcamp %}<a href="https://{{page.bandcamp}}.bandcamp.com" target="_blank"><span class="icon-bandcamp"></span> Bandcamp</a> (Make donates directly to {{page.title}})<br>{% endif %}
-					{% if page.facebook %}<a href="https://www.facebook.com/{{page.facebook}}" target="_blank"><span class="icon-facebook-official"></span> Facebook</a><br>{% endif %}
-					{% if page.soundcloud %}<a href="https://soundcloud.com/{{page.soundcloud}}" target="_blank"><span class="icon-soundcloud"></span> SoundCloud</a><br>{% endif %}
-					{% if page.coub %}<a href="http://coub.com/{{page.coub}}" target="_blank"><span class="icon-eagle"></span> Coub</a><br>{% endif %}
-					{% if page.discogs %}<a href="http://www.discogs.com/artist/{{page.discogs}}" target="_blank"><span class="icon-discogs"></span> Discogs</a><br>{% endif %}
-				</nav>
+                <div>{{page.title}} links:</div>
+                <nav class="social">
+                    {% if page.website %}<a href="http://{{page.website}}" target="_blank"><span class="icon-eagle"></span> {{page.title}}'s Website</a><br>{% endif %}
+                    {% if page.bandcamp %}<a href="https://{{page.bandcamp}}.bandcamp.com" target="_blank"><span class="icon-bandcamp"></span> Bandcamp</a> (Make donates directly to {{page.title}})<br>{% endif %}
+                    {% if page.facebook %}<a href="https://www.facebook.com/{{page.facebook}}" target="_blank"><span class="icon-facebook-official"></span> Facebook</a><br>{% endif %}
+                    {% if page.soundcloud %}<a href="https://soundcloud.com/{{page.soundcloud}}" target="_blank"><span class="icon-soundcloud"></span> SoundCloud</a><br>{% endif %}
+                    {% if page.coub %}<a href="http://coub.com/{{page.coub}}" target="_blank"><span class="icon-eagle"></span> Coub</a><br>{% endif %}
+                    {% if page.discogs %}<a href="http://www.discogs.com/artist/{{page.discogs}}" target="_blank"><span class="icon-discogs"></span> Discogs</a><br>{% endif %}
+                </nav>
 
-				<!-- <div id="fb-root"></div>
-				<script>(function(d, s, id) {
-				  var js, fjs = d.getElementsByTagName(s)[0];
-				  if (d.getElementById(id)) return;
-				  js = d.createElement(s); js.id = id;
-				  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=197035617008842";
-				  fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
+                <!-- <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=197035617008842";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
 
-				<div class="fb-like" data-href="https://www.facebook.com/irukanji.music" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
+                <div class="fb-like" data-href="https://www.facebook.com/irukanji.music" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div> -->
 
-			</div>
-			<div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
 
-				<h1>{{page.title}}</h1>
-				<ul class="list">
-					<li>Name: {{page.name}}</li>
-					<li>Location: {{page.location}}</li>
-				</ul>
+                <h1>{{page.title}}</h1>
+                <ul class="list">
+                    <li>Name: {{page.name}}</li>
+                    <li>Location: {{page.location}}</li>
+                </ul>
 
-				<br>
+                <br>
 
-				{% if page.soundcloud-id %}
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{{page.soundcloud-id}}&amp;color=54bebe&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-				{% endif %}
+                {% if page.soundcloud-id %}
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/{{page.soundcloud-id}}&amp;color=54bebe&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                {% endif %}
 
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
 
-				<br>
-				<br>
+                <br>
+                <br>
 
-				{{content}}
+                {{content}}
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </article>
 
 {% include list-artists.html %}

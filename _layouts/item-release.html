@@ -4,30 +4,30 @@ layout: default
 
 <article class="post-item release">
 
-	<h1>{{page.artist}} <span>"{{page.release-title}}"</span></h2>
+    <h1>{{page.artist}} <span>"{{page.release-title}}"</span></h2>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
 
-				<img src="{{site.baseurl}}/assets/img/releases/{{page.cat-no}}-large.jpg" alt='{{page.title}}' data-action="zoom">
+                <img src="{{site.baseurl}}/assets/img/releases/{{page.cat-no}}-large.jpg" alt='{{page.title}}' data-action="zoom">
 
-			</div>
-			<div class="col-sm-6">
+            </div>
+            <div class="col-sm-6">
 
-				<ul class="list">
-					<!-- <li>Artist: <span>{{page.artist}}<span></li>
-					<li>Title: <span>"{{page.release-title}}"<span></li> -->
-					<li class="cat-no">Cat.No: <span>{{page.cat-no}}<span></li>
-					<li>Release Date: <span>{{ page.date | date: "%d %b %Y" }}<span></li>
-					<li>Total Time: <span>{{ page.total-time}}<span></li>
-				</ul>
+                <ul class="list">
+                    <!-- <li>Artist: <span>{{page.artist}}<span></li>
+                    <li>Title: <span>"{{page.release-title}}"<span></li> -->
+                    <li class="cat-no">Cat.No: <span>{{page.cat-no}}<span></li>
+                    <li>Release Date: <span>{{ page.date | date: "%d %b %Y" }}<span></li>
+                    <li>Total Time: <span>{{ page.total-time}}<span></li>
+                </ul>
 
-				{{content}}
+                {{content}}
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </article>
 
 {% include list-releases.html %}

@@ -1,14 +1,14 @@
 <section class="news">
-	<div class="container">
+    <div class="container">
 
-		<h3>News</h3>
-		<div class="isotope-container">
-			{% for news in site.categories.news%}
-				<article class="isotope-item">
-					<a href="{{site.baseurl}}{{news.url}}">{{news.title}}</h4></a>
-				</article>
-			{% endfor %}
-		</div>
+        <h3>News</h3>
+        <div class="isotope-container">
+            {% for news in site.categories.news%}
+                <article class="isotope-item">
+                    <a href="{{site.baseurl}}{{news.url}}">{{news.title}}</h4></a>
+                </article>
+            {% endfor %}
+        </div>
 
-	</div>
+    </div>
 </section>

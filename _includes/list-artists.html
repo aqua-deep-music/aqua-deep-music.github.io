@@ -1,20 +1,20 @@
 <section class="artists">
-	<div class="container">
+    <div class="container">
 
-		<h2>Artists</h2>
+        <h2>Artists</h2>
 
-		<div class="isotope-container">
-			{% for artists in site.categories.artists %}
-				<article class="isotope-item">
-					<a href="{{site.baseurl}}{{artists.url}}">
-						<div class="image-contour">
-							<img src="{{site.baseurl}}/assets/img/artists/{{artists.url-id}}-thumbnail.jpg" alt="{{artists.title}}">
-						</div>
-						<h4>{{artists.title}}</h4>
-					</a>
-				</article>
-			{% endfor %}
-		</div>
+        <div class="isotope-container">
+            {% for artists in site.categories.artists %}
+                <article class="isotope-item">
+                    <a href="{{site.baseurl}}{{artists.url}}">
+                        <div class="image-contour">
+                            <img src="{{site.baseurl}}/assets/img/artists/{{artists.url-id}}-thumbnail.jpg" alt="{{artists.title}}">
+                        </div>
+                        <h4>{{artists.title}}</h4>
+                    </a>
+                </article>
+            {% endfor %}
+        </div>
 
-	</div>
+    </div>
 </section>
