@@ -1,0 +1,13 @@
+iframe.bandcamp-item {
+    background: #333;
+    border: 1px solid #4e4e4e;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    &__release {
+        height: 400px;
+    }
+}
