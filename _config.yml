@@ -1,16 +1,7 @@
-# Build settings
-baseurl: 
-markdown: kramdown
-permalink: /:title/
-
-host: 0.0.0.0
-port: 7002
-
+baseurl: ''
+include: ['_pages']
 exclude: ['README.md']
 
 sass:
   sass_dir: assets/css
   style: :compressed
-
-# custom settings
-keywords: 'Aqua Deepp Music, psychedelic, psytrance'

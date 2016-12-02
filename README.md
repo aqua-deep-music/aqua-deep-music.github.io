@@ -1,8 +1,17 @@
-# Aqua Deep Music
+# aquadeepmusic.github.io
 
-Web development of Aqua Deep Music offisial site
+_Web development of Aqua Deep Music site_
 
-Used [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
+### Used
 
-Proudly hosted by [GitHub Pages](https://pages.github.com)
+[Jekyll](https://jekyllrb.com) - static site generator based on [Ruby](https://www.ruby-lang.org)
 
+[Bourbon](http://bourbon.io) - mixins pack for [Sass](http://sass-lang.com)
+
+[GitHub Pages](https://pages.github.com) - free hosting
+
+### Run
+
+`jekyll serve -w --baseurl ''`
+
+#### Have fun! :)
