@@ -52,7 +52,11 @@ layout: compress
     <script src="{{ site.baseurl }}/assets/js/vendor/jquery.waypoints.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/vendor/zoom.js"></script>
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-    {% include Analytics/google-analytics.html %}
-    {% include Analytics/yandex-metrika.html %}
+
+    {% if jekyll.environment == "production" %}
+        {% include Analytics/google-analytics.html %}
+        {% include Analytics/yandex-metrika.html %}
+    {% endif %}
+
 </body>
 </html>
